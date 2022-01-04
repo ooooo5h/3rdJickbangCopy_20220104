@@ -23,6 +23,7 @@ class RoomAdapter(
         fun bind(data: RoomData) {
 
             txtDescription.text = data.description
+            txtAddressAndFloor.text = "${data.address}, ${data.getFormattedFloor()}"
         }
 
 
